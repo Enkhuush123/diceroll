@@ -10,10 +10,14 @@
         box-sizing: border-box;
         margin: 0;
         height: 100vh;
-        border: 2px solid black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+        background: #0090f7;
+        background: linear-gradient(
+          90deg,
+          rgba(0, 144, 247, 1) 0%,
+          rgba(186, 98, 252, 1) 50%,
+          rgba(242, 65, 107, 1) 100%
+        );
       }
 
       .button {
@@ -21,11 +25,62 @@
         height: 80px;
         border-radius: 24px;
         cursor: pointer;
+        border: none;
       }
 
       img {
         width: 100px;
         height: 80px;
+        border: none;
+      }
+
+      .dicediv {
+        width: 460px;
+        height: 360px;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        gap: 10px;
+      }
+
+      .button:hover {
+        background-color: black;
+        color: white;
+        box-shadow: 10px 10px lightblue;
+        box-shadow: -5px -5px lightblue;
+        border: 2px solid white;
+      }
+
+      .text {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+
+        height: 650px;
+        justify-content: center;
+        align-items: center;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 56px;
+      }
+
+      .div2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 0vh;
+      }
+
+      .dicestack {
+        height: 50vh;
+        align-items: center;
+        justify-content: space-evenly;
+        display: flex;
       }
     </style>
   </head>
